@@ -1,0 +1,51 @@
+.bloco_perfil {
+    /* border: solid red 1px; */
+    margin-top: 5%;
+    display: flex;
+    height: 100vh;
+}
+
+.bordar_perfil {
+    width: 93%;
+    background-color: white;
+    border: solid white 20px;
+    border-radius: 25px;
+    /* box-shadow: 0px 0px 20px 0px black; */
+}
+
+.bordar_perfil>img {
+    /* border: red 1px solid; */
+    width: 25vw;
+    height: 60vh;
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px 0px black;
+}
+
+.bloco_foto {
+    position: relative;
+    left: 5%;
+}
+
+.tema_perfil {
+    position: relative;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-size: 4vw;
+    width: 100px;
+    left: 10px;
+    /* border: solid red 1px; */
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px black;
+}
+
+.texto_perfil {
+    color: white;
+    /* border: solid black 1px; */
+    width: 100vh;
+    font-size: 28px;
+    position: relative;
+    margin-top: 5vw;
+    /* transform: translateY(-80%); */
+    margin-left: 30vh;
+}
