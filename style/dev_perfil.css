@@ -49,3 +49,8 @@
     /* transform: translateY(-80%); */
     margin-left: 30vh;
 }
+
+.numero_porcento {
+    position: relative;
+    top: 8px;
+}
