@@ -1,4 +1,4 @@
-.bloco_porcento {
+/* .bloco_porcento {
     width: 90%;
     height: 40px;
     background-color: white;
@@ -12,7 +12,6 @@
     width: 40%;
     height: 40px;
     background-color: green;
-    /* border: solid red 1px; */
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     box-shadow: 0px 0px 10px 5px black;
@@ -21,7 +20,6 @@
 .porcentagem {
     display: grid;
     grid-template-columns: 2fr 6fr 0.4fr;
-    /* border: solid 1px red; */
     grid-gap: 20px;
     margin-top: 8vh;
     width: 98vw;
@@ -49,7 +47,70 @@
     position: relative;
     margin-top: 20px;
     font-size: 4vw;
-    /* border: solid 1px red; */
     color: white;
     text-shadow: 0px 2px 10px black;
+} */
+
+@media only screen and (max-width: 425px) {
+    .bloco_porcento {
+        width: 150%;
+        height: 20px;
+        background-color: white;
+        border: solid black 3px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        box-shadow: 0px 0px 2px 0px black;
+    }
+    .porcentagem_verde {
+        width: 40%;
+        height: 20px;
+        background-image: linear-gradient(to right, #0078d9, #008ae4, #009ced, #00adf3, #00bef9);
+        /* border: solid red 1px; */
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        box-shadow: 0px 0px 5px 5px black;
+    }
+    .porcentagem {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(8, 6.5vh);
+        /* border: solid 1px red; */
+        /* grid-gap: 10px; */
+        margin-top: 4vh;
+        width: 99vw;
+        height: 50vh;
+    }
+    .linguagem_ferramenta {
+        text-align: center;
+        background-color: white;
+        border-radius: 25px;
+        font-size: 1em;
+        width: 50%;
+        height: 20px;
+        position: relative;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 9px 2px black;
+    }
+    .linguagem_ferramenta>label {
+        position: relative;
+        /* top: 7px; */
+        font-size: 0.7em;
+    }
+    .tema_linguagens {
+        position: relative;
+        margin-top: 20px;
+        font-size: 4vw;
+        /* border: solid 1px red; */
+        color: white;
+        text-shadow: 0px 2px 10px black;
+    }
+    .numero_porcento>label {
+        font-size: 1em !important;
+        top: -2px !important;
+        position: relative;
+        left: 75%;
+        transform: translateX(-75%);
+        text-shadow: 0px 10px 10px black;
+    }
 }

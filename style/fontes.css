@@ -1,0 +1,10 @@
+.tema_letra {
+    font-family: hero;
+}
+
+@font-face {
+    font-family: "hero";
+    /* box-shadow: 0px 0px 50px black; */
+    /*Caso a fonte esteja na mesma pasta*/
+    src: url("../src/font/HEROBEAM.ttf") format('truetype');
+}

@@ -1,6 +1,7 @@
 body {
     position: relative;
-    background: #6A3FB6;
+    /* background: #6A3FB6; */
+    background-image: linear-gradient(to right, #48084b, #550e5b, #62156b, #6e1c7c, #7b238e);
     margin: 0;
     padding: 0;
     border: 0;
