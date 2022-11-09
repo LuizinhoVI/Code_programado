@@ -7,6 +7,7 @@
     top: 0;
     z-index: 1;
     /* margin-bottom: 50px; */
+    /* border: solid red 3px; */
 }
 
 .espaco {
@@ -18,6 +19,7 @@
 }
 
 .logo {
+    position: relative;
     width: 100px;
     margin-left: 100px;
 }
@@ -47,6 +49,7 @@
 }
 
 .bloco_texto {
+    display: none;
     font-size: 25px;
     color: white;
     position: absolute;

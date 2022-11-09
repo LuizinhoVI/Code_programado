@@ -1,5 +1,72 @@
-@media only screen and (max-width: 500px) {
-    .barra_menu {
-        background-color: red;
+@media only screen and (max-width: 425px) {
+    .logo {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        /* border: solid red 1px; */
+    }
+    /* menu blocos */
+    .blocos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        border: white 1px solid;
+        /* top: 25vw; */
+    }
+    .blocos>div {
+        width: 45vw;
+        height: 45vw;
+        left: 50%;
+        margin-bottom: 30%;
+        transform: translateX(-50%);
+        /* border: solid red 1px; */
+    }
+    .blocos>div:hover {
+        border: blue solid 1px;
+    }
+    .bloco_texto {
+        display: block;
+        font-size: 1em;
+        margin-top: 50vw;
+    }
+    /* tema dos blocos */
+    .tema_perfil {
+        /* border: solid red 1px; */
+        width: 100%;
+        left: 0;
+        font-size: 2.2em;
+        text-align: center;
+        top: 10px;
+    }
+    /* fim da pagina */
+    footer {
+        position: fixed;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    footer>div {
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative;
+    }
+    .tema_letra {
+        font-family: hero;
+    }
+    @font-face {
+        font-family: "hero";
+        /*Caso a fonte esteja na mesma pasta*/
+        src: url("../src/font/HEROBEAM.ttf") format('truetype');
     }
 }
+
+
+/* apagando  tudo para o  desktop */
+
+@media only screen and (min-width: 500px) {
+    body {
+        display: none;
+    }
+}
+
+
+/* --------------------------------- */
