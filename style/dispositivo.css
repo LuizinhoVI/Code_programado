@@ -28,9 +28,6 @@
         transform: translateX(-50%);
         /* border: solid red 1px; */
     }
-    .blocos>div:hover {
-        border: blue solid 0px;
-    }
     .web_site {
         background-image: url("../src/img/blocos/site.png");
         /* background-position: ; */
