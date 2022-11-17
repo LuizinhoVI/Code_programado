@@ -6,39 +6,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="src/img/logo.png" type="image/icon type">
-    <link href="style/defaut.css" rel="stylesheet">
-    <link href="style/componetes.css" rel="stylesheet">
-    <link href="style/dev_perfil.css" rel="stylesheet">
-    <link href="style/ferramentas.css" rel="stylesheet">
-    <link href="style/dispositivo.css" rel="stylesheet">
-    <link href="style/fontes.css" rel="stylesheet">
+    <link href="style/import.css" rel="stylesheet">
     <script src="js/action.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>
+    </div>
     <script>
         $(document).ready(function() {
+
             $(".home").load("page/menu_home.html");
             $(".perfil").load("page/dev_perfil.html");
             $(".ferramentas").load("page/ferramentas.html");
         });
     </script>
+    <!DOCTYPE html>
+    <html lang="pt">
+
+    <head>
+        <title>Code programado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="src/img/logo.png" type="image/icon type">
+        <link href="style/import.css" rel="stylesheet">
+        <script src="js/action.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        </script>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $(".default").load("page/defaut.html");
+                $(".home").load("page/menu_home.html");
+                $(".perfil").load("page/dev_perfil.html");
+                $(".ferramentas").load("page/ferramentas.html");
+            });
+        </script>
+    </head>
+
+    <body>
+        <nav class="barra_menu">
+            <img class="logo" src="../src/img/centro.png" alt="">
+        </nav>
+        <!-- <div class="espaco"></div> -->
+        <div class="home" id="home1" style="display: block;"> </div>
+        <div class="perfil" id="perfil1" style="display: none;"></div>
+        <div class="ferramentas" style="display: none;"></div>
+        <!-- <div style="margin-top: 10vh;"> </div> -->
+
+        <footer>
+            <div> Copyright © 2022 Code programado. Todos Direitos Reservados.</div>
+        </footer>
+    </body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.3.min.js"></script>
-</head>
 
-<body>
-    <nav class="barra_menu">
-        <img class="logo" src="../src/img/centro.png" alt="">
-    </nav>
-    <!-- <div class="espaco"></div> -->
-    <div class="home" id="home1" style="display: block;"> </div>
-    <div class="perfil" id="perfil1" style="display: none;"></div>
-    <div class="ferramentas" style="display: none;"></div>
-    <!-- <div style="margin-top: 10vh;"> </div> -->
-
-    <footer>
-        <div> Copyright © 2022 Code programado. Todos Direitos Reservados.</div>
-    </footer>
-</body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.4.3.min.js"></script>
-
-</html>
+    </html>
