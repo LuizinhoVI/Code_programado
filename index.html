@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
-    <title>Code programado</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="src/img/logo.png" type="image/icon type">
-    <link href="style/import.css" rel="stylesheet">
-    <script src="js/action.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=google">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE PROGRAMADO</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>
-    </div>
     <script>
         $(document).ready(function() {
             $(".home").load("page/menu_home.html");
@@ -18,43 +15,78 @@
             $(".ferramentas").load("page/ferramentas.html");
         });
     </script>
-    <!DOCTYPE html>
-    <html lang="pt">
 
-    <head>
-        <title>Code programado</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="src/img/logo.png" type="image/icon type">
-        <link href="style/import.css" rel="stylesheet">
-        <script src="js/action.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-        </script>
-        </div>
-        <script>
-            $(document).ready(function() {
-                $(".default").load("page/defaut.html");
-                $(".home").load("page/menu_home.html");
-                $(".perfil").load("page/dev_perfil.html");
-                $(".ferramentas").load("page/ferramentas.html");
-            });
-        </script>
-    </head>
+    <style>
+        body {
+            background-color: rgb(60, 7, 121);
+            background-image: url(src/img/grid.png);
+            background-position: 100;
+            background-size: contain;
+            background-repeat: no-repeat unset space;
+        }
+        
+        .escala {
+            display: grid;
+            grid-template-columns: 150px 200px 300px 200px 150px;
+            /* grid-template-rows: 150px 200px 600px 200px 150px; */
+            position: relative;
+            /* transform: translateY(0%); */
+            justify-content: center;
+            grid-gap: 30px;
+        }
+        
+        .bloco {
+            /* width: 20vw; */
+            height: 70vh;
+            border: solid black 1px;
+            box-shadow: 1px 8px 10px black;
+            border-radius: 30px;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.09);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .bloco3 {
+            /* background-color: white; */
+            /* width: 20vw; */
+            height: 90vh;
+            top: 3.5vh;
+            position: relative;
+        }
+        
+        .bloco2 {
+            /* background-color: white; */
+            /* width: 20vw; */
+            height: 80vh;
+            top: 10vh;
+            position: relative;
+            /* border: solid black 1px; */
+        }
+        
+        .bloco1 {
+            /* background-color: white; */
+            /* width: 20vw; */
+            height: 70vh;
+            top: 15vh;
+            position: relative;
+            /* border: solid black 1px; */
+        }
+    </style>
 
-    <body>
-        <nav class="barra_menu">
-            <img class="logo" src="../src/img/centro.png" alt="">
-        </nav>
-        <!-- <div class="espaco"></div> -->
-        <div class="home" id="home1" style="display: block;"> </div>
-        <div class="perfil" id="perfil1" style="display: none;"></div>
-        <div class="ferramentas" style="display: none;"></div>
-        <!-- <div style="margin-top: 10vh;"> </div> -->
+</head>
 
-        <footer>
-            <div> Copyright © 2022 Code programado. Todos Direitos Reservados.</div>
-        </footer>
-    </body>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.3.min.js"></script>
+<body>
+    <nav class="escala">
+        <div class="bloco bloco1">1</div>
+        <div class="bloco bloco2"> 2</div>
+        <div class="bloco bloco3">3</div>
+        <div class="bloco bloco2">4</div>
+        <div class="bloco bloco1">5</div>
+    </nav>
+</body>
 
-    </html>
+</html>
