@@ -11,7 +11,7 @@
     <style>
         body {
             background-color: rgb(60, 7, 121);
-            background-image: url(src/img/grid.png);
+            background-image: url(src/img/fundo.png);
             background-position: 100;
             background-size: contain;
             background-repeat: no-repeat unset space;
@@ -19,7 +19,7 @@
         
         .escala {
             display: grid;
-            grid-template-columns: 150px 200px 300px 200px 150px;
+            grid-template-columns: 200px 200px 300px 200px 200px;
             /* grid-template-rows: 150px 200px 600px 200px 150px; */
             position: relative;
             /* transform: translateY(0%); */
@@ -69,7 +69,7 @@
         }
         /* foto de perfil  */
         
-        img {
+        imgy {
             /* border: solid red 1px; */
             --s: 250px;
             --b: 8px;
@@ -83,16 +83,16 @@
             transition: 0.3s;
         }
         
-        img:hover {
+        img:hovery {
             outline: calc(var(--b)/2)solid var(--c);
             outline-offset: var(--g);
         }
         
-        img {
+        imgy {
             border-radius: 50%;
         }
         
-        section {
+        sectiony {
             margin: 0;
             min-height: 100vh;
             display: grid;
@@ -102,23 +102,62 @@
             place-items: center;
             background: black;
         }
+        
+        .flip-container {
+            width: 300px;
+            height: 200px;
+            perspective: 1000px;
+        }
+        
+        .flipper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-container:hover .flipper {
+            transform: rotateY(180deg);
+        }
+        
+        .front,
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        
+        .back {
+            transform: rotateY(180deg);
+        }
     </style>
 
 </head>
 
 <body>
-    <nav class="escala">
-        <div class="bloco bloco1">1</div>
-        <div class="bloco bloco2"> 2</div>
-        <div class="bloco bloco3">3</div>
-        <div class="bloco bloco2">4</div>
-        <div class="bloco bloco1">5</div>
-    </nav>
+    <div class="flip-container">
+        <nav class="escala flipper">
+            <div class="bloco bloco1 " align="center">1
+                <div class="front">
+                    <img src="src/img/perfil.png" width="50px" height="50px" alt="">
+
+                </div>
+                <div class="back">
+                    <img src="src/img/perfil.jpg" width="50px" height="50px" alt="">
+                </div>
+            </div>
+
+            <div class="bloco bloco2">2</div>
+            <div class="bloco bloco3">3</div>
+            <div class="bloco bloco2">4</div>
+            <div class="bloco bloco1">5</div>
+        </nav>
+    </div>
     <hr>
 
-    <style>
 
-    </style>
     <section align="center">
         <img src="src/img/perfil.jpg" alt="">
     </section>
