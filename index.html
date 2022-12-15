@@ -6,135 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=google">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CODE PROGRAMADO</title>
+    <link rel="shortcut icon" href="src/img/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/import.css">
 
-
-    <style>
-        body {
-            /* background-color: rgb(60, 7, 121); */
-            background-image: url(src/img/fundo.png);
-            /* background-position: 1fr; */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        
-        .escala {
-            display: grid;
-            grid-template-columns: 200px 200px 300px 200px 200px;
-            /* grid-template-rows: 150px 200px 600px 200px 150px; */
-            position: relative;
-            /* transform: translateY(0%); */
-            justify-content: center;
-            grid-gap: 30px;
-        }
-        
-        .bloco {
-            /* width: 20vw; */
-            height: 70vh;
-            border: solid black 1px;
-            box-shadow: 1px 8px 10px black;
-            border-radius: 30px;
-            /* From https://css.glass */
-            background: rgba(255, 255, 255, 0.09);
-            border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-        
-        .bloco3 {
-            /* background-color: white; */
-            /* width: 20vw; */
-            height: 90vh;
-            top: 3.5vh;
-            position: relative;
-        }
-        
-        .bloco2 {
-            /* background-color: white; */
-            /* width: 20vw; */
-            height: 80vh;
-            top: 10vh;
-            position: relative;
-            /* border: solid black 1px; */
-        }
-        
-        .bloco1 {
-            /* background-color: white; */
-            /* width: 20vw; */
-            height: 70vh;
-            top: 15vh;
-            position: relative;
-            /* border: solid black 1px; */
-        }
-        /* foto de perfil  */
-        
-        imgy {
-            /* border: solid red 1px; */
-            --s: 250px;
-            --b: 8px;
-            --g: 10px;
-            --c: #ffff;
-            width: var(--s);
-            aspect-ratio: 1;
-            outline: calc(var(--s)/2)solid #0009;
-            outline-offset: calc(var(--s)/-2);
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        
-        img:hovery {
-            outline: calc(var(--b)/2)solid var(--c);
-            outline-offset: var(--g);
-        }
-        
-        imgy {
-            border-radius: 50%;
-        }
-        
-        sectiony {
-            margin: 0;
-            min-height: 100vh;
-            display: grid;
-            grid-auto-flow: column;
-            gap: 50px;
-            place-content: center;
-            place-items: center;
-            background: black;
-        }
-        
-        .flip-container {
-            width: 300px;
-            height: 200px;
-            perspective: 1000px;
-        }
-        
-        .flipper {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-        }
-        
-        .flip-container:hover .flipper {
-            transform: rotateY(180deg);
-        }
-        
-        .front,
-        .back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-        }
-        
-        .back {
-            transform: rotateY(180deg);
-        }
-    </style>
 
 </head>
 
@@ -162,14 +36,25 @@
      -->
     <hr>
 
+    <nav class="colunas">
 
-    <section align="center">
-        <div>
 
+
+
+        <div class="flip-container">
+            <div class="flipper">
+                <div class=" front bloco " align="center">
+                    <img src="src/img/perfil.jpg " alt=" ">
+                </div>
+                <div class="back bloco " align="center">
+                    <img src="src/img/centro.png " alt=" ">
+                </div>
+            </div>
         </div>
-        <img src="src/img/perfil.jpg" alt="">
-    </section>
 
+
+
+    </nav>
 </body>
 
 </html>

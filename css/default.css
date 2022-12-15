@@ -1,0 +1,52 @@
+body {
+    position: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-color: rgb(60, 7, 121); */
+    background-image: url(../src/img/fundo.png);
+    /* background-position: 1fr; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* foto de perfil  */
+
+imgy {
+    /* border: solid red 1px; */
+    --s: 250px;
+    --b: 8px;
+    --g: 10px;
+    --c: #ffff;
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2)solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+img:hovery {
+    outline: calc(var(--b)/2)solid var(--c);
+    outline-offset: var(--g);
+}
+
+imgy {
+    border-radius: 50%;
+}
+
+sectiony {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 50px;
+    place-content: center;
+    place-items: center;
+    background: black;
+}
