@@ -1,0 +1,14 @@
+@media only screen and (max-width: 500px) {
+    .box_de_vidro {
+        width: 90vw;
+        height: 60vh;
+        top: 10vh;
+    }
+    header {
+        font-size: 9vw;
+        top: 8vh;
+    }
+    header>label {
+        font-size: 7vw;
+    }
+}
