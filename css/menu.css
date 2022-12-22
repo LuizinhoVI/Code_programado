@@ -172,10 +172,18 @@ div {
     /* border: solid red 1px; */
     justify-content: center;
     text-align: center;
+    padding: 10px;
 }
 
 .box_de_vidro>div>a>label {
     cursor: pointer;
+}
+
+.box_de_vidro>div:hover {
+    cursor: pointer;
+    border-radius: 4px;
+    background: rgba(172, 114, 5, 0.753);
+    box-shadow: 0 4px 30px rgba(187, 89, 9, 0.8);
 }
 
 footer {
