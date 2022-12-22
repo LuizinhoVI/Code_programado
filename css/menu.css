@@ -4,8 +4,8 @@ header {
     /* border: solid red 1px; */
     font-size: 3.5vw;
     top: 35vh;
-    left: 7vw;
-    width: 100vw;
+    left: 20vw;
+    width: 70vw;
 }
 
 header>label {
@@ -19,7 +19,7 @@ header>img {
     position: absolute;
     width: 350px;
     height: 200px;
-    left: 40vw;
+    left: 30vw;
     top: 25vh;
     /* box-shadow: 1px 1px 1px 1px black; */
 }
@@ -32,7 +32,7 @@ label {
 
 div {
     border: solid red 1px;
-    cursor: pointer;
+    /* cursor: ; */
 }
 
 .icones {
@@ -40,8 +40,33 @@ div {
     height: 10vh;
 }
 
+.box_de_vidro_perfil {
+    position: absolute;
+    top: 50vh;
+    transform: translateY(-30vh);
+    left: 35vw;
+    width: 60vw;
+    height: 40vh;
+    border: solid black 1px;
+    box-shadow: 1px 8px 10px black;
+    border-radius: 30px;
+    /*Fromhttps:;
+    //css.glass*/
+    background: rgba(131, 116, 88, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(187, 89, 9, 0.800);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    -webkit-transform: translateY(-30vh);
+    -moz-transform: translateY(-30vh);
+    -ms-transform: translateY(-30vh);
+    -o-transform: translateY(-30vh);
+}
+
 .box_de_vidro {
-    position: relative;
+    position: absolute;
+    top: 20vh;
     width: 22vw;
     height: 60vh;
     border: solid black 1px;
