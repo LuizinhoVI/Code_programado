@@ -50,3 +50,8 @@ sectiony {
     place-items: center;
     background: black;
 }
+
+a {
+    cursor: pointer !important;
+    text-decoration: none;
+}

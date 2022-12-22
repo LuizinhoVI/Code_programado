@@ -1,0 +1,110 @@
+    .equip {
+        background: rgba(172, 114, 5, 0.753);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(187, 89, 9, 0.8);
+    }
+    
+    .box_de_vidro_perfil {
+        position: absolute;
+        top: 50vh;
+        transform: translateY(-30vh);
+        left: 30vw;
+        width: 65vw;
+        height: 70vh;
+        border: solid black 1px;
+        box-shadow: 1px 8px 10px black;
+        border-radius: 30px;
+        /*Fromhttps:;
+    //css.glass*/
+        background: rgba(131, 116, 88, 0);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(187, 89, 9, 0.800);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        -webkit-transform: translateY(-30vh);
+        -moz-transform: translateY(-30vh);
+        -ms-transform: translateY(-30vh);
+        -o-transform: translateY(-30vh);
+    }
+    
+    .foto_equip {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .foto_equip>p {
+        /*border: solid black 1px;
+    */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        color: white;
+        width: 25vw;
+        height: 40vh;
+        left: 10vw;
+        top: 3vh;
+        text-align: justify;
+        background-image: linear-gradient(to right, #f58e4d, #e47a3b, #d2672a, #c15319, #af3f04);
+        border-radius: 15px;
+        padding: 30px;
+        font-size: 1.2vw;
+        border: solid black 2px;
+        box-shadow: 0px 0px 10px 1px rgba(187, 89, 9, 0.800);
+    }
+    
+    .foto_equip>img {
+        width: 20vw;
+        height: 50vh;
+        left: 4vw;
+        top: 5vh;
+        border: solid black 1px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px 1px rgba(187, 89, 9, 0.800);
+        position: relative;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+    }
+    
+    .foto_equip>i {
+        position: relative;
+        font-size: 2vw;
+        color: white;
+        left: 6vw;
+        padding: 10px;
+        /* transform: translateX(vw); */
+    }
+    
+    .foto_equip>button {
+        left: 19vw;
+        font-size: 1.5vw;
+        padding: 10px;
+        position: relative;
+        border-radius: 15px;
+    }
+    
+    .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    
+    .button:hover {
+        background-color: #089b14de
+    }
+    
+    .button:active {
+        background-color: #9b4a08de;
+        box-shadow: 0 5px #2e2d2df3;
+        transform: translateY(4px);
+    }

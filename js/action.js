@@ -10,11 +10,11 @@ function resetPageOnVisibilityChange() {
 document.addEventListener('visibilitychange', resetPageOnVisibilityChange);
 
 
-function abrir() {
+function inicio() {
 
-    // document.getElementById("perfil1").style.display = "block";
-    // document.getElementById("home1").style.display = "none";
+    document.getElementById("perfil1").style.display = "block";
+    document.getElementById("home1").style.display = "none";
 
-    // $('#teste').css({ color: "red", backgroundColor: "#000" });
+    $('#teste').css({ color: "red", backgroundColor: "#000" });
 
 }

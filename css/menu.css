@@ -31,37 +31,122 @@ label {
 }
 
 div {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     /* cursor: ; */
+}
+
+.navegation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: 5vh;
+}
+
+.proximo {
+    position: relative;
+    left: 30vw;
+    /* border: solid red 1px; */
+    transform: translateX();
+}
+
+.voltar {
+    /* border: solid red 1px; */
+    position: relative;
+    right: 5vw;
+    transform: translateX();
+}
+
+.bt_voltar {
+    display: inline-block;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #f58e4d, #e47a3b, #d2672a, #c15319, #af3f04);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.bt_voltar:hover {
+    box-shadow: 0 4px 30px rgba(187, 89, 9, 0.8);
+}
+
+.bt_voltar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bt_voltar span:after {
+    content: '◄';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 5px;
+    transition: 0.5s;
+}
+
+.bt_voltar:hover span {
+    padding-left: 40px;
+}
+
+.bt_voltar:hover span:after {
+    opacity: 1;
+    left: -8px;
+}
+
+.bt_proximo {
+    display: inline-block;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #f58e4d, #e47a3b, #d2672a, #c15319, #af3f04);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.bt_proximo:hover {
+    box-shadow: 0 4px 30px rgba(187, 89, 9, 0.8);
+}
+
+.bt_proximo span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bt_proximo span:after {
+    content: '►';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 10px;
+    transition: 0.5s;
+}
+
+.bt_proximo:hover span {
+    padding-right: 30px;
+}
+
+.bt_proximo:hover span:after {
+    opacity: 1;
+    right: -10px;
 }
 
 .icones {
     width: 10vh;
     height: 10vh;
-}
-
-.box_de_vidro_perfil {
-    position: absolute;
-    top: 50vh;
-    transform: translateY(-30vh);
-    left: 35vw;
-    width: 60vw;
-    height: 40vh;
-    border: solid black 1px;
-    box-shadow: 1px 8px 10px black;
-    border-radius: 30px;
-    /*Fromhttps:;
-    //css.glass*/
-    background: rgba(131, 116, 88, 0);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(187, 89, 9, 0.800);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.09);
-    -webkit-transform: translateY(-30vh);
-    -moz-transform: translateY(-30vh);
-    -ms-transform: translateY(-30vh);
-    -o-transform: translateY(-30vh);
 }
 
 .box_de_vidro {
@@ -87,4 +172,16 @@ div {
     /* border: solid red 1px; */
     justify-content: center;
     text-align: center;
+}
+
+.box_de_vidro>div>a>label {
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 1vw;
+    color: white;
+    font-size: 2.2vw;
+    left: 9vw;
 }
