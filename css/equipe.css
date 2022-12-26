@@ -1,6 +1,7 @@
-    .equip {
+    .select_equip {
         background: rgba(172, 114, 5, 0.753);
-        border-radius: 16px;
+        border-radius: 4px;
+        border: solid black 1px;
         box-shadow: 0 4px 30px rgba(187, 89, 9, 0.8);
     }
     
